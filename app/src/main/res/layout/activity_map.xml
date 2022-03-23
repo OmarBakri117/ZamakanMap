@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backnew"
+    android:orientation="vertical"
+    tools:context=".MapActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backColor"
+        android:elevation="6dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabIconTint="#ede0cd"
+        app:tabIndicatorColor="#ede0cd"
+        app:tabTextColor="#ede0cd" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="675dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/curve_shape"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/yearsSlider"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:stepSize="1"
+            android:valueFrom="1850"
+            android:valueTo="2022"
+            app:haloColor="#7E776C"
+            app:thumbColor="@color/backColor"
+            app:tickColorInactive="#423E38"
+            app:trackColorActive="@color/backColor"
+            app:trackColorInactive="#807F7D" />
+
+        <TextView
+            android:id="@+id/actualYear"
+            style="@style/Arabic_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_marginRight="5dp"
+            android:text="ألسنة : "
+            android:textColor="@color/backColor"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

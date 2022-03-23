@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/backnew"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Arabic_Style"
+        android:layout_marginTop="10dp"
+        android:text="قم باختيار شخصية لتصوير تاريخها على الخريطة " />
+
+    <AutoCompleteTextView
+        android:id="@+id/simpleAC"
+        android:layout_width="297dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/textColor"
+        android:gravity="center"
+        android:hint="ما الذي توّد البحث عنه "
+        android:textColorHint="#fff"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/displayAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="25dp"
+            android:text="عرض جميع الشخصيات "
+            android:textColor="@color/backColor"
+            android:textSize="16sp"
+            app:backgroundTint="@color/textColor" />
+
+        <Button
+            android:id="@+id/Search_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="أبحث "
+            android:textColor="@color/backColor"
+            android:textSize="16sp"
+            app:backgroundTint="@color/textColor" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/Arabic_Style"
+                android:layout_marginTop="10dp"
+                android:text="الشخصيات التاريخية" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/myRecycler"
+                android:layout_width="411dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:scrollbars="vertical"
+                tools:layout_editor_absoluteY="107dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/Arabic_Style"
+                android:layout_marginTop="10dp"
+                android:text="الاحداث التاريخية " />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/eventsRecycler"
+                android:layout_width="411dp"
+                android:layout_height="361dp"
+                android:layout_margin="5dp"
+                android:scrollbars="vertical|none"
+                tools:layout_editor_absoluteY="107dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

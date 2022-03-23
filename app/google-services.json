@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "408328296916",
+    "firebase_url": "https://zamakan-map-default-rtdb.firebaseio.com",
+    "project_id": "zamakan-map",
+    "storage_bucket": "zamakan-map.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408328296916:android:616825a2ca0f689c871e41",
+        "android_client_info": {
+          "package_name": "com.example.zamakanmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408328296916-c762r6m9kk8lcsvbguclm7nk9ggm3k25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZEKAszs8zO2AhyJiMVZKHIfEQ3MhqQoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408328296916-c762r6m9kk8lcsvbguclm7nk9ggm3k25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

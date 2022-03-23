@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="375dp"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+    android:backgroundTint="@color/textColor"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/empName"
+                style="@style/text_style_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:textColor="@color/backColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/empEmail"
+                style="@style/text_style_one"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:textColor="#3E3A3A"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/profileBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:text="عرض التفاصيل "
+                android:textSize="10sp"
+                card_view:backgroundTint="@color/backColor" />
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="3dp"
+            android:layout_marginRight="6dp"
+            card_view:civ_border_color="@color/black"
+            card_view:civ_border_width="1dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
